@@ -1,69 +1,90 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Missão Artemis</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Missão Artemis</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #0b0c2a;
-            color: white;
-        }
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-        h1 {
-            margin-top: 20px;
-        }
+    body{
+      background:#020b3d;
+      color:white;
+      text-align:center;
+    }
 
-        .logo {
-            width: 220px;
-            margin: 20px 0;
-        }
+    header{
+      padding:40px 20px;
+    }
 
-        .texto {
-            max-width: 700px;
-            margin: auto;
-            font-size: 18px;
-        }
+    h1{
+      font-size:48px;
+      margin-bottom:20px;
+    }
 
-        .galeria {
-            margin-top: 30px;
-        }
+    p{
+      max-width:700px;
+      margin:auto;
+      line-height:1.6;
+      font-size:18px;
+    }
 
-        .galeria img {
-            width: 250px;
-            margin: 10px;
-            border-radius: 10px;
-        }
-    </style>
+    .imagens{
+      display:flex;
+      justify-content:center;
+      gap:30px;
+      flex-wrap:wrap;
+      margin:50px 20px;
+    }
+
+    .imagens img{
+      width:300px;
+      height:200px;
+      object-fit:cover;
+      border-radius:12px;
+      transition:0.3s;
+    }
+
+    .imagens img:hover{
+      transform:scale(1.05);
+    }
+
+    footer{
+      background:#01072c;
+      padding:20px;
+      margin-top:40px;
+    }
+  </style>
 </head>
 
 <body>
 
+  <header>
     <h1>Missão Artemis</h1>
 
-    <!-- LOGO -->
-    <img class="logo" src="https://www.nasa.gov/wp-content/uploads/2023/03/artemis-logo.png" alt="Logo Artemis">
+    <p>
+      A Missão Artemis é um programa espacial da NASA que busca
+      levar humanos novamente à Lua e preparar futuras missões para Marte.
+    </p>
+  </header>
 
-    <!-- TEXTO -->
-    <div class="texto">
-        <p>
-            A missão Artemis é um programa da NASA que tem como objetivo
-            levar novamente seres humanos à Lua. O projeto pretende pousar
-            a primeira mulher e a próxima pessoa na superfície lunar,
-            além de preparar futuras missões para Marte.
-        </p>
-    </div>
+  <section class="imagens">
 
-    <!-- GALERIA -->
-    <div class="galeria">
-        <img src="https://www.nasa.gov/wp-content/uploads/2023/03/artemis1.jpg">
-        <img src="https://www.nasa.gov/wp-content/uploads/2023/03/orion.jpg">
-        <img src="https://www.nasa.gov/wp-content/uploads/2023/03/moon.jpg">
-        <img src="https://www.nasa.gov/wp-content/uploads/2023/03/rocket.jpg">
-        <img src="https://www.nasa.gov/wp-content/uploads/2023/03/launch.jpg">
-    </div>
+    <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=1200&auto=format&fit=crop" alt="Espaço">
+
+    <img src="https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?q=80&w=1200&auto=format&fit=crop" alt="Foguete">
+
+  </section>
+
+  <footer>
+    <p>© 2026 - Missão Artemis</p>
+  </footer>
 
 </body>
 </html>
